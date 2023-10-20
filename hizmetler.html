@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoft Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+  @import url("footernav.css");
+  body{
+    overflow-x: hidden;
+  }
+
+    .outside{
+        margin-top: 30px;
+    }
+    .outside-grid-1, .outside-grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+       
+
+
+    }
+    .grid-1-1{
+        background: linear-gradient(to right, rgb(35, 33, 33),rgb(27, 25, 25), black);
+        width: 500px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-radius: 10px;
+        
+    }
+
+  .indicator{
+    width: 100%;
+    margin-top: 50px;
+    height: 1.3px;
+    background-color: black;
+
+}
+.container1-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 120px;
+    background: white;
+}
+.container1{
+    margin: 0 40px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container1 h1{
+    text-align: center;
+}
+.container1 .tab{
+    position: relative;
+    background-color: white;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container1 .tab input{
+    appearance: none;
+}
+.container1 .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container1 .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0,0,0,0.1);
+    transition: transform 1s;
+}
+.container1 .tab:hover label::after{
+    color: #333;
+}
+.container1 .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+    color: white;
+}
+.container1 .tab label h2 {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.container1 .tab:nth-child(2) label h2{
+    background: linear-gradient(135deg,#70f570,#49c628)
+}
+.container1 .tab:nth-child(3) label h2{
+    background: linear-gradient(135deg,#3c8ce7,#00eaff)
+}
+.container1 .tab:nth-child(4) label h2{
+    background: linear-gradient(135deg,#ff96f9,#c32bac)
+}
+.container1 .tab:nth-child(5) label h2{
+    background: linear-gradient(135deg,#fd6e6a,#ffc600)
+}
+.container1 .tab label h3{
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
+}
+.container1 .tab .content1{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.container1 .tab input:checked ~ .content1{
+    max-height: 100vh;
+}
+.container1 .tab .content1 p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}
+.container1 .tab input:checked ~ label h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.grid-1-1 img{
+    width: 250px;
+    height: 210px;
+    margin-top: 30px;
+    margin-left: -60px;
+
+}
+.grid-1-1 h2{
+    color: #7948d4;
+    font-size: 26px;
+    display: inline-block;
+    margin-top: 10px;
+    
+}
+.grid-1-1 span{
+    color: white;
+    
+   
+    
+}
+#h1-1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+.container1 .tab input:checked ~ label h3{
+    background: white;
+    padding: 2px 10px;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.container1 .tab input:checked ~ .content1 p{
+    color: white;
+}
+@media (max-width: 1020px){
+    .outside-grid-1, .outside-grid-2{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 40px;
+    }
+}
+
+@media (max-width:1135px){
+    .hideOnMobile{
+        display: none;
+    }
+    #toggle{
+        display: block;
+    }
+}
+@media (max-width:991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .copyrightText{
+        padding: 20px 40px 30px;
+    }
+}
+@media (max-width:768px){
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+@media (max-width:500px){
+    .grid-1-1 {
+        width: 350px;
+        text-align: center;
+
+    }
+    .grid-1-1 img{
+        width: 150px;
+        height: 110px;
+        margin-top: 80px;
+        margin-left: -30px;
+        
+    }
+    .grid-1-1 h2{
+        font-size: 18px;
+    }
+  
+}
+@media (max-width:850px){
+ #h1-1{
+    font-size: 40px;
+ }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" style="color: #000000; font-size: 26px;"></i></a></li>
+            <li><a href="resoft.html">Ana Sayfa</a></li>
+            <li><a href="hakkımızda.html">Hakkımızda</a></li>
+            <li><a href="hizmetler.html">Hizmetler</a></li>
+            <li><a href="paketler.html">Paketler</a></li>
+            <li><a href="biz.html">Bize Ulaşın</a></li>
+            <li><a style="padding: 2px 20px 2px; background-color: #7948d4; color: white; border-radius: 5px;" href="biz.html">Teklif Al</a></li>
+            
+        </ul>
+        <ul>
+            
+            <li><a href="resoft.html"><img style="width: 100px; height: 100px; margin-top: 10px;" src="vs-photo/RESOFT (2).png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="resoft.html">Ana Sayfa</a></li>
+            <li class="hideOnMobile"><a href="hakkımızda.html">Hakkımızda</a></li>
+            <li class="hideOnMobile"><a href="hizmetler.html">Hizmetler</a></li>
+            <li class="hideOnMobile"><a href="paketler.html">Paketler</a></li>
+            <li  class="hideOnMobile"><a href="biz.html">Bize Ulaşın</a></li>
+            <li class="hideOnMobile" style="margin-right: 50px;"><a style="padding: 2px 20px 2px; border-radius: 5px; background-color: #7948d4; color: white;" href="biz.html">Teklif Al</a></li>
+            <li id="toggle" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars" style="color: #000000; font-size: 26px;"></i></a></li>
+        </ul>
+    </nav>
+ 
+       <div  style="width: auto;">
+        <h1 id="h1-1">Hizmetlerimizden Yararlanın</h1>
+       </div>
+    <div style="margin-top: 50px;" class="outside">
+        <div  class="outside-grid-1">
+            <div class="grid-1-1"><img   src="vs-photo/066d19c1-c2c9-4bc3-82af-06aef5195439.png" alt="">
+                <h2 style="margin-left: 50px;">Hedef Kitle Analizi <br> <br>
+                    <span style="color: white; font-size: 15px;">Sosyal medya ajansımız, hedef kitle analizi ile markalarınıza özel stratejiler geliştirir. Sizinle birlikte daha etkili ve odaklı iletişim sağlıyoruz.</span></h2> 
+                
+              </div>
+                <div class="grid-1-1"><img   src="vs-photo/12553bb7-fc49-4189-b1b8-28fe7056ea41.png" alt="">
+                    <h2 style="margin-left: 50px;">Yaratıcı İçerikler <br> <br>
+                        <span style="font-size: 15px; ">Sosyal medya ajansımızda yaratıcı içerikler tasarlayarak markaların çevrimiçi varlıklarını güçlendiriyoruz. Bizimle fark yaratın!</span>
+                    
+                </h2>
+                   
+                </div>
+         </div>
+
+        <div style="margin-top: 40px;" class="outside-grid-2">
+            <div class="grid-1-1"><img  src="vs-photo/9fe2ace9-ee86-4c38-a60b-e10c380aa7ef.png" alt="">
+                <h2 style="margin-left: 50px;">Reklam Yönetimi <br> <br>
+                    <span style="font-size: 15px; ">Sosyal medya ajansımız, reklam yönetimi ile hedef kitlenize ulaşmanızı sağlar. Etkili kampanyalar ve daha fazla görünürlük için bizimle çalışın.</span></h2>
+            </div>
+            <div class="grid-1-1"><img src="vs-photo/c6951373-9aee-4360-beed-364d8c0bec7b.png" alt="">
+                <h2>Sosyal Medya yönetimi <br> <br>
+                <span style="font-size: 15px; ">Sosyal medya ajansımız, güçlü bir varlık oluşturmak için sosyal medya yönetiminde uzmandır. Markanızın çevrimiçi itibarını yönlendiriyoruz.</span></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container1-out">
+        <div class="container1">
+            <h1 id="faq">Sık Sorulan Sorular</h1>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc1">
+                <label for="acc1">
+                    <h2>01</h2>
+                    <h3>Aylık Abonelik Modeli Nasıl Çalışıyor ?</h3>
+                </label>
+                <div class="content1">
+                    <p>Resoft Media aylık abonelikle, müşterilere belirli bir ücret karşılığında sürekli sosyal medya hizmetleri sunar. Bu hizmetler, içerik üretimi, paylaşımlar, analizler ve reklam yönetimi gibi faaliyetleri içerir. Müşteriler, hedeflerine ulaşmak için bu abonelikten faydalanır ve sürekli güncel ve etkili bir sosyal medya varlığına sahip olurlar. </p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc2">
+                <label for="acc2">
+                    <h2>02</h2>
+                    <h3>İşletmemize/Markamıza Ne Katabilirsiniz ? </h3>
+                </label>
+                <div class="content1">
+                    <p>Birçok kurumsal medya ajansının aksine, müşterilerimizin problemleriyle yakından ilgileniyoruz. Bu sayede müşterilerimizin markalarına paketlerimiz dahilinde en etkili şekilde hizmet ediyoruz. Sosyal medya hesaplarınızın büyümesine ve etkileşiminizin artmasına doğrudan katkıda bulunuyoruz.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc3">
+                <label for="acc3">
+                    <h2>03</h2>
+                    <h3>Abonelik Fiyatları Neye Göre Belirleniyor ?</h3>
+                </label>
+                <div class="content1">
+                    <p>Resoft Media'da, paket fiyatları müşterilerin bireysel ihtiyaçlarına ve hedeflerine göre özelleştirilir. Müşterilerle yapılacak görüşmeler sonucunda en uygun fiyatlandırma belirlenir, böylece her müşterinin özel gereksinimlerine uygun çözümler sunulur.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc4">
+                <label for="acc4">
+                    <h2>04</h2>
+                    <h3>Aboneliğimi İptal Edebilir Miyim ?</h3>
+                </label>
+                <div class="content1">
+                    <p>Resoft Media, müşterilerine esneklik sunar ve aylık abonelikleri herhangi bir zamanda durdurma seçeneği sunar. Müşteriler istedikleri zaman hizmeti askıya alabilir veya sonlandırabilirler.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="indicator">
+
+    </div>
+    <div class="body-2">
+        <footer>
+            <div class="container">
+                <div class="sec aboutus">
+                    <h2>Hakkımızda</h2>
+                    <p>Resoft Media olarak, sosyal ağlardaki en son iletişim trendlerinin takibindeyiz: yeni formatlar, yazı, grafik stillerinin gelişimi... Hedef kitlenizin dikkatini başarılı bir şekilde çekmek için çalışırız.</p>
+                    <ul class="sci">
+                        <li><a href="https://www.instagram.com/resoftmedia/"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                        <li><a href="biz.html"><i class="fa-solid fa-envelope" style="color: #000000;"></i></a></li>
+                        
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Destek</h2>
+                    <ul>
+                    
+                        <li><a href="#faq">S.S.S</a></li>
+                        <li><a href="biz.html">Yardım</a></li>
+                        <li><a href="biz.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Paketler</h2>
+                    <ul>
+                        <li><a href="paketler.html">Kurumsal Kimlik </a></li>
+                        <li><a href="paketler.html">Sosyal Medya</a></li>
+                        <li><a href="paketler.html">Reklam</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Bize Ulaşın</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa-solid fa-phone-volume" style="color: #000000;"></i></span><p><a style="color: #555;" href="tel:+905073850930">+90 507 385 09 30</a></p>
+                            <span><i class="fa-solid fa-envelope" style="color: #000000;"></i></span><p><a style="color: #555;" href="biz.html">resoftagency@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrightText"> <p>Copyright 2023 Resoft Media. All Rights Reserved.</p> </div>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            
+        }
+
+    </script>
+</body>
+</html>
