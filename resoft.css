@@ -20,6 +20,9 @@ position: fixed;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.main-sec-div-1{
+    margin-top: 60px;
+}
 .main-sec-div-1 #ege1{
     position: absolute;
     top: 50%;
