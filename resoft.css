@@ -88,11 +88,7 @@ position: fixed;
     animation-name: slidedown;
     animation-timing-function: ease-in-out;
     animation-duration: 1.4s; 
-    color:white;
-    margin-top:30px;
-    font-weight:bolder;
-    margin-right:30px;
-    font-size:55px;
+
 }
 #main-sec-h2{
     animation-name: slideright;
