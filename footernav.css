@@ -36,7 +36,6 @@ nav li{
     height: 100vh;
     display: none;
     width: 250px;
-    color: white;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.4);
@@ -47,9 +46,11 @@ nav li{
 }
 .sidebar li{
     width: 100%;
+     color: white;
 }
 .sidebar a{
     width: 100%;
+     color: white;
 }
 nav a {
     height: 100%;
