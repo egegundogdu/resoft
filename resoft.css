@@ -277,7 +277,7 @@ position: fixed;
 }
 
 
-@media (max-width:1135px){
+@media (max-width:1165px){
     .hideOnMobile{
         display: none;
     }
