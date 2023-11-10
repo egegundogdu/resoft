@@ -12,9 +12,7 @@ body{
     overflow-x: hidden;
 
 }
-nav{
-    margin-top: 20px;
-}
+
 nav ul {
     width: 100%;
     list-style: none;
