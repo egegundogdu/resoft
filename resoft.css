@@ -31,7 +31,7 @@ position: fixed;
     font-size: 35px;
 }
 .main-sec{
-    background-color: black;
+      background-image: linear-gradient(to bottom ,#201f24,#141116,#15131a);
     width: 100%;
     height: auto;
     display: grid;
