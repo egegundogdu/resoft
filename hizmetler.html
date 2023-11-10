@@ -213,6 +213,28 @@
         row-gap: 40px;
     }
 }
+        @media (max-width:950px){
+    .paket-grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-row: row;
+    }
+    .paket-grid-div{
+        width: 500px;
+        margin-top: 50px; 
+    }
+    #paket-margin{
+        margin-top: 320px;
+    }
+}
+@media (max-width:500px){
+    .paket-grid-div{
+        width: 350px;
+        margin-top: 80px;
+    }
+    #paket-margin{
+        margin-top: 400px;
+    }
+}
 
 @media (max-width:1165px){
     .hideOnMobile{
